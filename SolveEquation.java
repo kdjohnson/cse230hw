@@ -5,7 +5,7 @@
 * Both partners worked together to complete the lab
 */
 
-package Quadratic;
+package Homework2;
 import java.util.Scanner;
 
 public class SolveEquation {
@@ -13,25 +13,24 @@ public class SolveEquation {
     public static void main(String[] args) {
         
         Scanner scan = new Scanner( System.in );
+        System.out.println("Enter a: ");
+        int a = scan.nextInt();
+        
+        
+        System.out.println("Enter b: ");
+        int b = scan.nextInt();
+        
+        System.out.println("Enter c: ");
+        int c = scan.nextInt(); 
+        
+        Quadratic equation = new Quadratic(a, b, c);
+        
+        System.out.println( equation.toString() );
+        System.out.println( equation.solveQuadratic()); 
         /*
-        System.out.println("Enter a real number");
         double real = scan.nextDouble();
         System.out.println("Enter a imaginary");
         double imag = scan.nextDouble();
-        */
-                
-        System.out.println( "Please enter a value for a: " );
-        int a = scan.nextInt( );
-        
-        System.out.println( "Please enter a value for b: " );
-        int b = scan.nextInt( );
-        
-        System.out.println( "Please enter a value for c: " );
-        int c = scan.nextInt( );
-        
-        Quadratic equation = new Quadratic( a, b, c );
-        
-        equation.solveQuadratic( );
         
         Complex num = new Complex(real, imag );
         Complex num2 = new Complex(4.0, -7.0); 
@@ -54,7 +53,7 @@ public class SolveEquation {
        
         //I didn't test the sets! 
         //I didn't change the ComplexPair toString just tested 
-        
+      */  
     }
     
 }
