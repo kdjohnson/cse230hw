@@ -58,9 +58,9 @@ public class ComplexPair {
     public String toString( )
     {
       return "The first number is: " + 
-              (first.getImaginary() == 0 ? first.getReal() : (first.getReal() == 0 ? first.getImaginary() : first) )
+              (first.getImaginary() == 0 ? first.getReal() : (first.getReal() == 0 ? first.getImaginary() + "i" : first) )
               
               + "\n The second number is: " + 
-              (second.getImaginary() == 0 ? second.getReal() : (second.getReal() == 0 ? second.getImaginary() : second) );  
+              (second.getImaginary() == 0 ? second.getReal() : (second.getReal() == 0 ? second.getImaginary() + "i": second) );  
     }
 }
