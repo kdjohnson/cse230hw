@@ -1,4 +1,4 @@
-package Quadratic;
+package Homework2;
 
 public class Complex {
     private double imaginary;
@@ -17,7 +17,7 @@ public class Complex {
          return false;
      else
      {
-         Complex roots = ( Complex ) o;
+         Complex roots = (Complex) o;
             if( imaginary == roots.imaginary && real == roots.real )
                 return true;
             else 
@@ -35,7 +35,7 @@ public class Complex {
         return real;
     }
     
-    public boolean isReal( )
+    public boolean isReal()
     {
         /*  This checks if it is the number is real.
             If the number was squared it would need to be postive or zero to be real
@@ -66,7 +66,8 @@ public class Complex {
             prints according to that. I didn't put the minus sign because if the 
             number is negative it will act as the opeartion seperating the numbers. 
         */
-        return real + (imaginary > 0 ? " + " + imaginary + "i" : + imaginary + "i");
+        
+        return real + (imaginary > 0 || imaginary == 0 ? " + " + imaginary + "i" : + imaginary + "i");
     }
     
 }
