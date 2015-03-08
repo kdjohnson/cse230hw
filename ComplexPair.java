@@ -57,10 +57,10 @@ public class ComplexPair {
     @Override
     public String toString( )
     {
-      return "The first number is: " + 
-              (first.getImaginary() == 0 ? first.getReal() : (first.getReal() == 0 ? first.getImaginary() + "i" : first) )
+      return "Solutions: first: " + 
+              (first.getImaginary() == 0 ? first.getReal() : (first.getReal() == 0 ? first.getImaginary() + "i" : (first.getImaginary() < 0 ? first.getReal() + " - " + Math.abs( first.getImaginary() ) + "i" : first ) ) )
               
-              + "\n The second number is: " + 
+              + "; second: " + 
               (second.getImaginary() == 0 ? second.getReal() : (second.getReal() == 0 ? second.getImaginary() + "i": second) );  
     }
 }

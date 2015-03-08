@@ -26,7 +26,9 @@ public class SolveEquation {
         Quadratic equation = new Quadratic(a, b, c);
         
         System.out.println( equation.toString() );
+        System.out.println( equation.getComment() );
         System.out.println( equation.solveQuadratic()); 
+      
         /*
         double real = scan.nextDouble();
         System.out.println("Enter a imaginary");
@@ -53,7 +55,6 @@ public class SolveEquation {
        
         //I didn't test the sets! 
         //I didn't change the ComplexPair toString just tested 
-      */  
+      */     
     }
-    
 }
