@@ -67,7 +67,7 @@ public class Complex {
             number is negative it will act as the opeartion seperating the numbers. 
         */
         
-        return real + (imaginary > 0 || imaginary == 0 ? " + " + imaginary + "i" : + imaginary + "i");
+        return real + (imaginary > 0 ? " + " + imaginary + "i" : + imaginary + "i");
     }
     
 }
