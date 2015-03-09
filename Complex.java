@@ -37,8 +37,8 @@ public class Complex {
     
     public boolean isReal()
     {
-        /*  This checks if it is the number is real.
-            If the number was squared it would need to be postive or zero to be real
+        /** Checks if it is the number is real.
+         * If the number was squared it would need to be positive or zero to be real
         */
         if( Math.sqrt( real ) > 0 || Math.sqrt( real ) == 0)
             return true;
@@ -59,12 +59,12 @@ public class Complex {
     @Override
     public String toString( )
     {
-        /*
+        /**
             Prints the class fields as a string.
             I used ternary operator instead of if else 
-            It checks if the imaginary number is negative or positve and
+            It checks if the imaginary number is negative or positive and
             prints according to that. I didn't put the minus sign because if the 
-            number is negative it will act as the opeartion seperating the numbers. 
+            number is negative it will act as the operator separating the numbers. 
         */
         
         return real + (imaginary > 0 ? " + " + imaginary + "i" : + imaginary + "i");
