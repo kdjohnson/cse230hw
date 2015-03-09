@@ -1,4 +1,4 @@
-package Homework2;
+package homework2_borel_johnson;
 
  class Quadratic {
     private int a, b, c;
@@ -18,9 +18,10 @@ package Homework2;
     }
     
     /**
-     * 
-     * @return 
-     */
+     * @return int - the discriminant based off of the 
+     * values of variables a, b, and c.
+     * Used to determine the type of answer (Complex, Real, # of Roots)
+    */
     private int discriminant( )
     {
         return ( ( b * b ) - 4 * a * c );
