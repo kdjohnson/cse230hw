@@ -5,7 +5,7 @@
 * Both partners worked together to complete the lab
 */
 
-package Homework2;
+package homework2_borel_johnson;
 import java.util.Scanner;
 
 public class SolveEquation {
@@ -14,20 +14,35 @@ public class SolveEquation {
         
         Scanner scan = new Scanner( System.in );
         System.out.println("Enter a: ");
+        while ( ! scan.hasNextInt( ) )
+        {
+            String garbage = scan.nextLine();
+            System.out.println( "Please enter a numeric value for \"a\":" );
+        }
         int a = scan.nextInt();
         
         
         System.out.println("Enter b: ");
+        while ( ! scan.hasNextInt( ) )
+        {
+            String garbage = scan.nextLine();
+            System.out.println( "Please enter a numeric value for \"b\":" );
+        }
         int b = scan.nextInt();
         
         System.out.println("Enter c: ");
+        while ( ! scan.hasNextInt( ) )
+        {
+            String garbage = scan.nextLine();
+            System.out.println( "Please enter a numeric value for \"c\":" );
+        }
         int c = scan.nextInt(); 
         
         Quadratic equation = new Quadratic(a, b, c);
         
         System.out.println( equation.toString() );
-        System.out.println( equation.getComment() );
         System.out.println( equation.solveQuadratic()); 
+        System.out.println( equation.getComment() );
       
         /*
         double real = scan.nextDouble();
@@ -52,9 +67,6 @@ public class SolveEquation {
         System.out.println("First complex: " + pair1.getFirst() );
         System.out.println("Second complex: " + pair2.getSecond() ); 
         System.out.println("ComplexPair: " + pair1.toString() );
-       
-        //I didn't test the sets! 
-        //I didn't change the ComplexPair toString just tested 
       */     
     }
 }
